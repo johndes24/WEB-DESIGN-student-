@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Registration Form</title>
+  <link rel="stylesheet" href="external_registration.css">
+</head>
+<body>
+  <h2 class="form-title">EMPLOYEE REGISTRATION FORM</h2>
+  
+  <h5 class="form-subtitle">Please fill in the information requested below to complete your registration.<br>
+    Thank you and welcome to the team!
+  </h5>
+
+  <form name="registrationForm" action="submit.php" method="post">
+    <div class="form-field">
+      <label for="firstName">First Name*</label>
+      <input type="text" id="firstName" name="firstName" required>
+    </div>
+
+    <div class="form-field">
+      <label for="lastName">Last Name*</label>
+      <input type="text" id="lastName" name="lastName" required>
+    </div>
+
+    <div class="form-field">
+      <label for="email">Email*</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-field">
+      <label for="phoneNumber">Phone Number*</label>
+      <input type="tel" placeholder="+63XXXXXXXXXX" id="phoneNumber" name="phoneNumber" required>
+    </div>
+
+    <div class="form-field">
+      <label for="department">Department*</label>
+      <select id="department" name="department" required style="width: 105.1%;">
+        <option value="" disabled selected>Select Department</option>
+        <option value="HR">Human Resources</option>
+        <option value="IT">Information Technology</option>
+        <option value="Finance">Finance</option>
+        <option value="Sales">Sales</option>
+        <option value="customerService">Customer Service</option>
+      </select>
+    </div>
+
+    <div class="form-field">
+      <label for="position">Position*</label>
+      <input type="text" id="position" name="position" required>
+    </div>
+
+    <div class="form-field">
+      <label for="startDate">Start Date*</label>
+      <input type="date" id="startDate" name="startDate" required>
+    </div>
+
+    <div class="form-field">
+      <label for="address">Complete Home Address*</label>
+      <textarea id="address" name="address" required></textarea>
+    </div>
+
+    <div class="form-field">
+      <label for="emergencyContact">Emergency Contact Name*</label>
+      <input type="text" id="emergencyContact" name="emergencyContact" required>
+    </div>
+
+    <div class="form-field">
+      <label for="emergencyPhoneNumber">Emergency Contact Number*</label>
+      <input type="tel" placeholder="+63XXXXXXXXXX" id="emergencyPhoneNumber" name="emergencyPhoneNumber" required>
+    </div>
+
+    <div class="form-field">
+      <button type="submit">Register</button>
+    </div>
+  </form>
+</body>
+</html>
